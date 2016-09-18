@@ -1,0 +1,51 @@
+" custom/vimrc.plugin, sourced by vimrc.plugin
+" Author: Francis Niu (https://github.com/flniu)
+" Last Change: 2016-09-19
+
+" vim-plug
+if exists('g:plugs')
+  " Omit `call plug#begin()` because it has been called in vimrc.plugin
+
+  " Syntastic, syntax checking
+  Plug 'scrooloose/syntastic'
+
+  " Vim python-mode
+  Plug 'klen/python-mode', { 'for': 'python' }
+  Plug 'Glench/Vim-Jinja2-Syntax'
+
+  " GitGutter, shows a git diff in the gutter
+  "Plug 'airblade/vim-gitgutter'
+
+  " Color schemes
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'tomasr/molokai'
+  Plug 'blueshirts/darcula'
+
+  " Syntax for Confluence wiki
+  Plug 'flniu/confluencewiki.vim'
+
+  call plug#end()
+endif
+
+" SnipMate
+let g:snips_author = 'Francis Niu'
+let g:snips_github = 'https://github.com/flniu'
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {
+      \ 'mode': 'active',
+      \ 'active_filetypes': [],
+      \ 'passive_filetypes': ['python'] }
+let g:syntastic_python_checkers=['pylint']
+
+" Python
+let python_highlight_all = 1
+let g:pymode_python = 'python3'
+
+" vim:et:ts=2:sw=2:fdm=marker:
