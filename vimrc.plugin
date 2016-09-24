@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-09-19
+" Last Change: 2016-09-24
 
 " vim-plug
 if exists('g:plugs')
@@ -9,9 +9,8 @@ if exists('g:plugs')
   " Syntastic, syntax checking
   Plug 'scrooloose/syntastic'
 
-  " Vim python-mode
-  Plug 'klen/python-mode', { 'for': 'python' }
-  Plug 'Glench/Vim-Jinja2-Syntax'
+  "Plug 'Glench/Vim-Jinja2-Syntax'
+  "Plug 'kchmck/vim-coffee-script'
 
   " GitGutter, shows a git diff in the gutter
   "Plug 'airblade/vim-gitgutter'
@@ -46,6 +45,5 @@ let g:syntastic_python_checkers=['pylint']
 
 " Python
 let python_highlight_all = 1
-let g:pymode_python = 'python3'
 
 " vim:et:ts=2:sw=2:fdm=marker:
