@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-09-24
+" Last Change: 2016-09-29
 
 " vim-plug
 if exists('g:plugs')
@@ -9,8 +9,8 @@ if exists('g:plugs')
   " Syntastic, syntax checking
   Plug 'scrooloose/syntastic'
 
-  "Plug 'Glench/Vim-Jinja2-Syntax'
-  "Plug 'kchmck/vim-coffee-script'
+  Plug 'Glench/Vim-Jinja2-Syntax'
+  Plug 'kchmck/vim-coffee-script'
 
   " GitGutter, shows a git diff in the gutter
   "Plug 'airblade/vim-gitgutter'
@@ -35,7 +35,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {
       \ 'mode': 'active',
