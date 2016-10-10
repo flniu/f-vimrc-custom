@@ -1,6 +1,8 @@
 " custom/vimrc, sourced by vimrc
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-09-19
+" Last Change: 2016-10-11
+
+colors monokai
 
 " Autocmds
 au BufNewFile,BufRead *.sgf set filetype=sgf

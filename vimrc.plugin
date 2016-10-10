@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-09-29
+" Last Change: 2016-10-11
 
 " vim-plug
 if exists('g:plugs')
@@ -13,11 +13,14 @@ if exists('g:plugs')
   Plug 'kchmck/vim-coffee-script'
 
   " GitGutter, shows a git diff in the gutter
-  "Plug 'airblade/vim-gitgutter'
+  if g:my_os != 'Windows'
+    Plug 'airblade/vim-gitgutter'
+  endif
 
   " Color schemes
   Plug 'altercation/vim-colors-solarized'
   Plug 'tomasr/molokai'
+  Plug 'sickill/vim-monokai'
   Plug 'blueshirts/darcula'
 
   " Syntax for Confluence wiki
@@ -29,6 +32,7 @@ endif
 " SnipMate
 let g:snips_author = 'Francis Niu'
 let g:snips_github = 'https://github.com/flniu'
+
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -45,5 +49,9 @@ let g:syntastic_python_checkers=['pylint']
 
 " Python
 let python_highlight_all = 1
+
+" Molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 
 " vim:et:ts=2:sw=2:fdm=marker:
