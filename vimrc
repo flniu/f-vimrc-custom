@@ -1,8 +1,8 @@
 " custom/vimrc, sourced by vimrc
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-10-11
+" Last Change: 2016-10-12
 
-if has('gui_running')
+if &term != 'win32'
   colors molokai
 endif
 
