@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-10-11
+" Last Change: 2016-10-12
 
 " vim-plug
 if exists('g:plugs')
@@ -18,9 +18,8 @@ if exists('g:plugs')
   endif
 
   " Color schemes
+  Plug 'flniu/molokai'
   Plug 'altercation/vim-colors-solarized'
-  Plug 'tomasr/molokai'
-  Plug 'sickill/vim-monokai'
   Plug 'blueshirts/darcula'
 
   " Syntax for Confluence wiki

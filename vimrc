@@ -2,7 +2,9 @@
 " Author: Francis Niu (https://github.com/flniu)
 " Last Change: 2016-10-11
 
-colors monokai
+if has('gui_running')
+  colors molokai
+endif
 
 " Autocmds
 au BufNewFile,BufRead *.sgf set filetype=sgf
