@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-10-26
+" Last Change: 2016-12-28
 
 " vim-plug
 if exists('g:plugs')
@@ -9,21 +9,17 @@ if exists('g:plugs')
   " Syntastic, syntax checking
   Plug 'scrooloose/syntastic'
 
-  Plug 'Glench/Vim-Jinja2-Syntax'
-  Plug 'kchmck/vim-coffee-script'
-
-  " GitGutter, shows a git diff in the gutter
-  if g:my_os != 'Windows'
-    Plug 'airblade/vim-gitgutter'
-  endif
-
   " Color schemes
   Plug 'flniu/molokai'
-  Plug 'altercation/vim-colors-solarized'
-  Plug 'blueshirts/darcula'
 
   " Syntax for Confluence wiki
   Plug 'flniu/confluencewiki.vim'
+
+  " Syntax for TOML
+  Plug 'cespare/vim-toml'
+
+  Plug 'Glench/Vim-Jinja2-Syntax'
+  Plug 'kchmck/vim-coffee-script'
 
   call plug#end()
 endif
