@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-12-28
+" Last Change: 2016-12-29
 
 " vim-plug
 if exists('g:plugs')
@@ -34,13 +34,9 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_mode_map = {
-      \ 'mode': 'active',
-      \ 'active_filetypes': [],
-      \ 'passive_filetypes': ['python', 'html'] }
-let g:syntastic_python_checkers=['pylint']
+let g:syntastic_python_checkers=['flake8']
 
 " Python
 let python_highlight_all = 1
