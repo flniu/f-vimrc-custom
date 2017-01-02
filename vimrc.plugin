@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2016-12-29
+" Last Change: 2017-01-02
 
 " vim-plug
 if exists('g:plugs')
@@ -9,16 +9,24 @@ if exists('g:plugs')
   " Syntastic, syntax checking
   Plug 'scrooloose/syntastic'
 
+  " YouCompleteMe, code completion
+  Plug 'Valloric/YouCompleteMe'
+
+  " Expand visual region
+  Plug 'terryma/vim-expand-region'
+
   " Color schemes
-  Plug 'flniu/molokai'
+  Plug 'flniu/f-vim-colors'
 
   " Syntax for Confluence wiki
   Plug 'flniu/confluencewiki.vim'
-
+  " Syntax for nginx
+  Plug 'evanmiller/nginx-vim-syntax'
   " Syntax for TOML
   Plug 'cespare/vim-toml'
-
+  " Syntax for Jinja2
   Plug 'Glench/Vim-Jinja2-Syntax'
+  " Syntax for coffee
   Plug 'kchmck/vim-coffee-script'
 
   call plug#end()
@@ -37,6 +45,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers=['flake8']
+
+" YouCompleteMe
+let g:ycm_python_binary_path = 'python3'
 
 " Python
 let python_highlight_all = 1
