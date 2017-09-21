@@ -1,6 +1,6 @@
 " custom/vimrc.plugin, sourced by vimrc.plugin
 " Author: Francis Niu (https://github.com/flniu)
-" Last Change: 2017-01-13
+" Last Change: 2017-09-21
 
 " vim-plug
 if exists('g:plugs')
@@ -11,7 +11,7 @@ if exists('g:plugs')
   " Syntax for Confluence wiki
   Plug 'flniu/confluencewiki.vim'
   " Syntax for nginx
-  Plug 'evanmiller/nginx-vim-syntax'
+  Plug 'vim-scripts/nginx.vim'
   " Syntax for TOML
   Plug 'cespare/vim-toml'
   " Syntax for Jinja2
